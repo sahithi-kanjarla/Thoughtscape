@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
 const NAV = [
-  { id: "work", label: "work" },
   { id: "about", label: "about" },
+  { id: "work", label: "work" },
   { id: "experience", label: "experience" },
   { id: "stage", label: "stage" },
+  { id: "certifications", label: "certs" },
   { id: "contact", label: "contact" },
 ];
 

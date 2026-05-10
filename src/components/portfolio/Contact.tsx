@@ -17,14 +17,37 @@ export function Contact() {
   return (
     <section id="contact" className="px-6 md:px-10 pt-28 pb-12 md:pt-40 md:pb-16 max-w-[1400px] mx-auto w-full">
       <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground mb-10">
-        let's build something —
+        let's talk —
       </div>
       <h2
         className="font-display text-cream leading-[0.95] tracking-[-0.03em] text-balance"
         style={{ fontSize: "clamp(2.5rem, 9vw, 9rem)" }}
       >
-        Have a wild idea? <span className="italic text-primary">Send it.</span>
+        Let's make something <span className="italic text-primary">together.</span>
       </h2>
+      <p className="font-display italic text-cream/70 text-xl md:text-2xl mt-6 max-w-2xl">
+        Open to internships, collaborations and good conversations about AI,
+        accessibility and design.
+      </p>
+
+      <div className="mt-10 flex flex-wrap gap-3">
+        <a
+          href="/Sahithi_Kanjarla_Resume.pdf"
+          download
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-mono text-xs uppercase tracking-[0.22em] hover:bg-primary/90 transition"
+        >
+          <svg viewBox="0 0 24 24" className="size-4 fill-none stroke-current" strokeWidth="2" aria-hidden>
+            <path d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          download resume
+        </a>
+        <a
+          href={`mailto:${CONTACT.email}`}
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full border hairline text-cream font-mono text-xs uppercase tracking-[0.22em] hover:border-primary hover:text-primary transition"
+        >
+          send an email →
+        </a>
+      </div>
 
       <button
         onClick={copy}

@@ -72,15 +72,20 @@ export const STAGE = [
   { title: "Literature Club", caption: "Words, off the keyboard." },
 ];
 
-export const ACHIEVEMENTS = [
-  "AWS Academy Cloud Foundations Graduate (2025)",
-  "NASSCOM — Exploratory Data Analysis (Gold)",
-  "NASSCOM — Data Processing & Visualization (Silver)",
-  "Top 5% Nationwide — NPTEL",
-  "3rd Position — SIH Internal Hackathon 2025",
-  "Runner-Up — AWS Gen AI Hackathon 2024",
-  "Open Source — Social Summer of Code '24 & '25",
-  "Merit Scholarship — ₹7.25 Lakhs",
+export const ACHIEVEMENTS: { title: string; note?: string }[] = [
+  { title: "3rd Position — SIH Internal Hackathon", note: "2025" },
+  { title: "Runner-Up — AWS Gen AI Hackathon", note: "2024" },
+  { title: "Open Source — Social Summer of Code", note: "'24 & '25" },
+  { title: "Merit Scholarship — ₹7.25 Lakhs", note: "academic" },
+  { title: "Founding Lead — GDG On Campus", note: "community" },
+  { title: "Host — AgentCon, Microsoft Office", note: "speaking" },
+];
+
+export const CERTIFICATIONS = [
+  { title: "AWS Academy Cloud Foundations Graduate", issuer: "AWS Academy", year: "2025" },
+  { title: "Exploratory Data Analysis — Gold", issuer: "NASSCOM", year: "2024" },
+  { title: "Data Processing & Visualization — Silver", issuer: "NASSCOM", year: "2024" },
+  { title: "Top 5% Nationwide", issuer: "NPTEL", year: "2024" },
 ];
 
 export const EDUCATION = [

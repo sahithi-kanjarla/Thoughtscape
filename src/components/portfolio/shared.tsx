@@ -2,14 +2,19 @@ import { motion } from "framer-motion";
 
 export function SectionLabel({ index, title }: { index: string; title: string }) {
   return (
-    <div className="flex items-baseline gap-4 mb-12 md:mb-20">
-      <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-primary">
-        {index}
-      </span>
-      <span className="h-px flex-1 bg-cream/15" />
-      <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+    <div className="mb-14 md:mb-20">
+      <div className="flex items-center gap-4 mb-6">
+        <span className="font-mono text-[11px] uppercase tracking-[0.22em] text-primary">
+          {index}
+        </span>
+        <span className="h-px flex-1 bg-cream/15" />
+      </div>
+      <h2
+        className="font-display text-cream leading-[0.9] tracking-[-0.03em]"
+        style={{ fontSize: "clamp(2.5rem, 7vw, 6rem)", fontVariationSettings: '"wght" 350' }}
+      >
         {title}
-      </span>
+      </h2>
     </div>
   );
 }
