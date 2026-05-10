@@ -3,12 +3,13 @@ import { Nav } from "@/components/portfolio/Nav";
 import { Hero } from "@/components/portfolio/Hero";
 import { Marquee } from "@/components/portfolio/Marquee";
 import { About } from "@/components/portfolio/About";
+import { Education } from "@/components/portfolio/Education";
 import { Work } from "@/components/portfolio/Work";
 import { Experience } from "@/components/portfolio/Experience";
 import { Toolbox } from "@/components/portfolio/Toolbox";
 import { Stage } from "@/components/portfolio/Stage";
 import { Wins } from "@/components/portfolio/Wins";
-import { Education } from "@/components/portfolio/Education";
+import { Certifications } from "@/components/portfolio/Certifications";
 import { Contact } from "@/components/portfolio/Contact";
 
 export const Route = createFileRoute("/")({
@@ -40,12 +41,13 @@ function Index() {
       <Hero />
       <Marquee />
       <About />
+      <Education />
       <Work />
       <Experience />
       <Toolbox />
       <Stage />
       <Wins />
-      <Education />
+      <Certifications />
       <Contact />
     </main>
   );
