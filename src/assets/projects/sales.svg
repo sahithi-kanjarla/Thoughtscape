@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Sales Data Analysis">
+  <rect width="800" height="500" fill="#1a1814"/>
+  <g>
+    <rect x="100" y="320" width="60" height="120" fill="#FF5B22"/>
+    <rect x="180" y="260" width="60" height="180" fill="#FF8a4d"/>
+    <rect x="260" y="200" width="60" height="240" fill="#FF5B22"/>
+    <rect x="340" y="280" width="60" height="160" fill="#c44216"/>
+    <rect x="420" y="160" width="60" height="280" fill="#FF8a4d"/>
+    <rect x="500" y="220" width="60" height="220" fill="#FF5B22"/>
+    <rect x="580" y="120" width="60" height="320" fill="#FFB07a"/>
+    <rect x="660" y="240" width="60" height="200" fill="#FF5B22"/>
+  </g>
+  <path d="M130 380 L210 320 L290 260 L370 320 L450 220 L530 280 L610 180 L690 290"
+    fill="none" stroke="#F4EFE6" stroke-width="3" stroke-linecap="round"/>
+  <g font-family="JetBrains Mono, monospace" font-size="12" fill="#F4EFE6" opacity=".7">
+    <text x="40" y="60">/ 04</text>
+    <text x="40" y="470">q1 · q2 · q3 · q4</text>
+  </g>
+  <text x="760" y="60" text-anchor="end" font-family="Fraunces, serif" font-style="italic" fill="#F4EFE6" font-size="22">sales bi</text>
+</svg>

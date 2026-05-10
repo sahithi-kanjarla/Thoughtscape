@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Chemical Equipment Visualization">
+  <rect width="800" height="500" fill="#181a17"/>
+  <g stroke="#F4EFE6" stroke-width="1" opacity=".1">
+    <path d="M40 460 H760"/><path d="M40 460 V40"/>
+    <g stroke-dasharray="2 6">
+      <path d="M40 360 H760"/><path d="M40 260 H760"/><path d="M40 160 H760"/>
+    </g>
+  </g>
+  <path d="M40 400 L160 340 L260 380 L360 240 L460 290 L560 180 L660 220 L760 120"
+    fill="none" stroke="#FF5B22" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 400 L160 340 L260 380 L360 240 L460 290 L560 180 L660 220 L760 120 L760 460 L40 460 Z"
+    fill="#FF5B22" opacity=".15"/>
+  <g fill="#F4EFE6">
+    <circle cx="160" cy="340" r="5"/><circle cx="360" cy="240" r="5"/><circle cx="560" cy="180" r="5"/><circle cx="760" cy="120" r="5"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="12" fill="#F4EFE6" opacity=".7">
+    <text x="40" y="60">/ 03</text>
+    <text x="40" y="490" opacity=".4">temp · flow · pressure</text>
+  </g>
+  <text x="760" y="60" text-anchor="end" font-family="Fraunces, serif" font-style="italic" fill="#F4EFE6" font-size="22">chem viz</text>
+</svg>

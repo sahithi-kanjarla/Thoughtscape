@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="NutriSense">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f1d18"/>
+      <stop offset="1" stop-color="#2a1a10"/>
+    </linearGradient>
+    <radialGradient id="bowl" cx=".5" cy=".55" r=".5">
+      <stop offset="0" stop-color="#FF8a4d"/>
+      <stop offset="1" stop-color="#c44216"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <g opacity=".18" stroke="#F4EFE6" stroke-width="1">
+    <path d="M0 380 Q200 320 400 380 T800 380"/>
+    <path d="M0 410 Q200 350 400 410 T800 410"/>
+    <path d="M0 440 Q200 380 400 440 T800 440"/>
+  </g>
+  <ellipse cx="400" cy="320" rx="220" ry="55" fill="#0E0E0C" opacity=".4"/>
+  <path d="M180 290 a220 100 0 0 0 440 0 z" fill="url(#bowl)"/>
+  <ellipse cx="400" cy="290" rx="220" ry="40" fill="#FFB07a"/>
+  <g fill="#FF5B22">
+    <circle cx="320" cy="280" r="14"/>
+    <circle cx="380" cy="295" r="11"/>
+    <circle cx="440" cy="278" r="16"/>
+    <circle cx="490" cy="296" r="10"/>
+    <circle cx="350" cy="298" r="8"/>
+  </g>
+  <g fill="#7bb377">
+    <ellipse cx="295" cy="270" rx="14" ry="6" transform="rotate(-20 295 270)"/>
+    <ellipse cx="465" cy="265" rx="14" ry="6" transform="rotate(15 465 265)"/>
+  </g>
+  <g stroke="#FFB07a" stroke-width="3" fill="none" opacity=".7">
+    <path d="M340 250 q5 -25 0 -45"/>
+    <path d="M400 245 q-5 -28 5 -50"/>
+    <path d="M460 250 q8 -22 -2 -45"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" fill="#F4EFE6" font-size="13" opacity=".75">
+    <text x="40" y="60">/ 01</text>
+    <text x="40" y="460">nutrient_score: 92 · region: south_in</text>
+  </g>
+  <text x="760" y="60" text-anchor="end" font-family="Fraunces, serif" font-style="italic" fill="#F4EFE6" font-size="22">nutrisense</text>
+</svg>
