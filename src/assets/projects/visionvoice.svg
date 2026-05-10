@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="VisionVoice AI">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15191f"/>
+      <stop offset="1" stop-color="#1f1814"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg2)"/>
+  <g stroke="#F4EFE6" stroke-width="1" opacity=".08">
+    <path d="M0 250 H800"/><path d="M400 0 V500"/>
+    <circle cx="400" cy="250" r="120" fill="none"/>
+    <circle cx="400" cy="250" r="180" fill="none"/>
+  </g>
+  <g transform="translate(400 250)">
+    <ellipse cx="0" cy="0" rx="150" ry="80" fill="none" stroke="#F4EFE6" stroke-width="3"/>
+    <circle r="55" fill="#FF5B22"/>
+    <circle r="22" fill="#0E0E0C"/>
+    <circle cx="14" cy="-14" r="8" fill="#F4EFE6"/>
+  </g>
+  <g stroke="#FF5B22" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M120 250 q20 -40 0 -80"/>
+    <path d="M150 250 q35 -55 0 -110"/>
+    <path d="M180 250 q50 -70 0 -140"/>
+    <path d="M680 250 q-20 -40 0 -80"/>
+    <path d="M650 250 q-35 -55 0 -110"/>
+    <path d="M620 250 q-50 -70 0 -140"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="12" fill="#F4EFE6" opacity=".7">
+    <text x="40" y="60">/ 02</text>
+    <text x="40" y="460">yolo · blip · tts</text>
+  </g>
+  <text x="760" y="60" text-anchor="end" font-family="Fraunces, serif" font-style="italic" fill="#F4EFE6" font-size="22">visionvoice</text>
+</svg>

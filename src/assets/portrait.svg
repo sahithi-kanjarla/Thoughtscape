@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1f18"/>
+      <stop offset="1" stop-color="#0E0E0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="600" fill="url(#pg)"/>
+  <g transform="translate(250 280)">
+    <circle r="220" fill="none" stroke="#FF5B22" stroke-width="1" opacity=".25"/>
+    <circle r="160" fill="none" stroke="#FF5B22" stroke-width="1" opacity=".4"/>
+    <circle r="110" fill="#1a1612"/>
+    <circle cy="-30" r="55" fill="#FFB07a"/>
+    <path d="M-90 50 q90 -90 180 0 v140 h-180 z" fill="#FF5B22"/>
+  </g>
+  <g font-family="JetBrains Mono, monospace" font-size="11" fill="#F4EFE6" opacity=".6">
+    <text x="30" y="40">/ portrait</text>
+    <text x="30" y="570">replace with photo</text>
+  </g>
+</svg>

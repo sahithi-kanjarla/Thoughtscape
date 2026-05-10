@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Smart Blind Stick">
+  <rect width="800" height="500" fill="#16170f"/>
+  <g stroke="#F4EFE6" stroke-width="1" opacity=".1">
+    <circle cx="200" cy="250" r="60" fill="none"/>
+    <circle cx="200" cy="250" r="120" fill="none"/>
+    <circle cx="200" cy="250" r="180" fill="none"/>
+    <circle cx="200" cy="250" r="240" fill="none"/>
+  </g>
+  <g stroke="#FF5B22" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M210 220 q40 0 50 -40"/>
+    <path d="M210 230 q60 -10 75 -55"/>
+    <path d="M210 240 q80 -20 95 -65"/>
+  </g>
+  <line x1="200" y1="80" x2="220" y2="430" stroke="#F4EFE6" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="200" cy="80" r="14" fill="#FF5B22"/>
+  <rect x="195" y="425" width="40" height="10" rx="3" fill="#F4EFE6"/>
+  <g font-family="JetBrains Mono, monospace" font-size="12" fill="#F4EFE6" opacity=".7">
+    <text x="40" y="60">/ 05</text>
+    <text x="40" y="470">ultrasonic · arduino</text>
+  </g>
+  <text x="760" y="60" text-anchor="end" font-family="Fraunces, serif" font-style="italic" fill="#F4EFE6" font-size="22">blind stick</text>
+</svg>
