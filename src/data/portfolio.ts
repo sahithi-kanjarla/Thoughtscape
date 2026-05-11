@@ -81,11 +81,12 @@ export const ACHIEVEMENTS: { title: string; note?: string }[] = [
   { title: "Host — AgentCon, Microsoft Office", note: "speaking" },
 ];
 
-export const CERTIFICATIONS = [
-  { title: "AWS Academy Cloud Foundations Graduate", issuer: "AWS Academy", year: "2025" },
-  { title: "Exploratory Data Analysis — Gold", issuer: "NASSCOM", year: "2024" },
-  { title: "Data Processing & Visualization — Silver", issuer: "NASSCOM", year: "2024" },
-  { title: "Top 5% Nationwide", issuer: "NPTEL", year: "2024" },
+export const CERTIFICATIONS: { title: string; issuer: string; year: string; file?: string }[] = [
+  { title: "AWS Academy Cloud Foundations Graduate", issuer: "AWS Academy", year: "2025", file: "/certs/aws-academy-cloud-foundations.pdf" },
+  { title: "Exploratory Data Analysis — Gold", issuer: "NASSCOM", year: "2024", file: "/certs/nasscom-eda-gold.pdf" },
+  { title: "Data Processing & Visualization — Silver", issuer: "NASSCOM", year: "2024", file: "/certs/nasscom-data-processing-visualization.pdf" },
+  { title: "Industry 4.0 & Industrial IoT — Top 5%", issuer: "NPTEL", year: "2024", file: "/certs/nptel-industry-4.0-iiot.pdf" },
+  { title: "Social Summer of Code — Contributor", issuer: "SSOC", year: "'24 & '25" },
 ];
 
 export const EDUCATION = [
