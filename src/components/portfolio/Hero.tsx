@@ -47,8 +47,8 @@ export function Hero() {
           Portfolio · 2026 edition
         </motion.div>
 
-        <h1 className="font-display font-light leading-[0.85] tracking-[-0.04em] text-cream"
-          style={{ fontSize: "clamp(3.5rem, 13vw, 14rem)" }}>
+        <h1 className="font-display font-light leading-[0.88] tracking-[-0.035em] text-cream"
+          style={{ fontSize: "clamp(2.75rem, 9vw, 9.5rem)" }}>
           <span className="block overflow-hidden">
             <span className="inline-block">
               {first.split("").map((c, i) => (

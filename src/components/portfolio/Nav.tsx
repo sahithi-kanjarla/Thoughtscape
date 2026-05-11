@@ -40,12 +40,19 @@ export function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contact"
-          className="font-mono text-[11px] uppercase tracking-[0.22em] px-4 py-2 rounded-full border border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-        >
-          say hi →
-        </a>
+        <div className="flex items-center gap-3">
+          <span className="hidden sm:inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-cream/70">
+            <span className="size-1.5 rounded-full bg-primary status-dot" />
+            open to work
+          </span>
+          <a
+            href="/Sahithi_Kanjarla_Resume.pdf"
+            download
+            className="font-mono text-[11px] uppercase tracking-[0.22em] px-4 py-2 rounded-full border border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+          >
+            download resume ↓
+          </a>
+        </div>
       </div>
     </header>
   );
