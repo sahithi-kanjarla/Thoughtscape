@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const NAV = [
   { id: "about", label: "about" },
@@ -47,6 +48,7 @@ export function Nav() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
+          <ThemeToggle />
           <span className="hidden sm:inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-cream/70">
             <span className="size-1.5 rounded-full bg-primary status-dot" />
             open to work
