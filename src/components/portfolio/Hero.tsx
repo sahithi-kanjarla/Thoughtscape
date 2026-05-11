@@ -106,9 +106,18 @@ export function Hero() {
             <span className="text-primary not-italic font-sans"> creativity</span> and
             <span className="text-primary not-italic font-sans"> sustainability</span>.
           </p>
-          <ul className="font-mono text-xs uppercase tracking-[0.18em] text-muted-foreground md:text-right space-y-1">
-            {ROLES.map((r) => (
-              <li key={r}>{r}</li>
+          <ul className="flex flex-wrap gap-2 md:justify-end">
+            {ROLES.map((r, i) => (
+              <li
+                key={r}
+                className={`font-mono text-[10px] md:text-[11px] uppercase tracking-[0.18em] px-3 py-1.5 rounded-full border ${
+                  i === 0
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "bg-surface/80 text-cream border-cream/15"
+                }`}
+              >
+                {r}
+              </li>
             ))}
           </ul>
         </motion.div>
