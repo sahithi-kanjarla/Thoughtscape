@@ -8,70 +8,70 @@ export function Certifications() {
     <section id="certifications" className="px-6 md:px-10 py-28 md:py-40 max-w-[1400px] mx-auto w-full">
       <SectionLabel index="08 / certifications" title="paper trail —" />
 
-      <div className="grid lg:grid-cols-3 gap-6 items-start">
-        {/* Featured badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6 }}
-          className="lg:col-span-1 rounded-lg border hairline bg-surface/60 p-6 flex flex-col gap-4"
-        >
-          <div className="aspect-square rounded-md bg-background/60 border hairline flex items-center justify-center overflow-hidden">
-            <img src={ssocBadge} alt="Social Summer of Code Contributor badge" className="w-3/4 h-3/4 object-contain" />
-          </div>
-          <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-primary mb-2">featured</p>
-            <h3 className="font-display text-xl text-cream leading-tight">Social Summer of Code — Contributor</h3>
-            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground mt-2">'24 &amp; '25 · open source</p>
-          </div>
-        </motion.div>
-
-        {/* List */}
-        <ul className="lg:col-span-2 divide-y divide-cream/10 border-y hairline">
-          {CERTIFICATIONS.filter((c) => c.file).map((c, i) => (
-            <motion.li
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {CERTIFICATIONS.map((c, i) => {
+          const isImage = !c.file && c.title.toLowerCase().includes("social summer");
+          return (
+            <motion.article
               key={c.title}
-              initial={{ opacity: 0, x: -16 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.45, delay: i * 0.05 }}
-              className="group grid grid-cols-12 gap-3 md:gap-6 items-baseline py-5 md:py-6"
+              transition={{ duration: 0.5, delay: (i % 3) * 0.06 }}
+              className="group rounded-lg border hairline bg-surface/60 overflow-hidden flex flex-col hover:border-primary/40 transition-colors"
             >
-              <span
-                className="col-span-2 md:col-span-1 font-display italic text-cream/30 group-hover:text-primary transition-colors leading-none"
-                style={{ fontSize: "clamp(1.25rem, 2vw, 1.75rem)" }}
-              >
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <div className="col-span-10 md:col-span-7">
-                <h3 className="font-display text-base md:text-lg tracking-tight text-cream leading-snug">
-                  {c.title}
-                </h3>
-                <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground mt-1 md:hidden">
-                  {c.issuer} · {c.year}
-                </p>
-              </div>
-              <span className="hidden md:block md:col-span-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                {c.issuer}
-              </span>
-              <div className="col-span-12 md:col-span-2 md:text-right">
+              {/* Preview */}
+              <div className="relative aspect-[4/3] bg-background border-b hairline overflow-hidden">
                 {c.file ? (
+                  <>
+                    <object
+                      data={`${c.file}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                      type="application/pdf"
+                      className="w-full h-full pointer-events-none"
+                      aria-label={c.title}
+                    >
+                      <div className="w-full h-full grid place-items-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                        pdf preview
+                      </div>
+                    </object>
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent pointer-events-none" />
+                    <span className="absolute top-3 left-3 font-mono text-[9px] uppercase tracking-[0.22em] text-cream bg-background/70 backdrop-blur px-2 py-1 rounded-full border hairline">
+                      pdf
+                    </span>
+                  </>
+                ) : isImage ? (
+                  <div className="w-full h-full grid place-items-center bg-gradient-to-br from-primary/10 via-surface to-background p-6">
+                    <img src={ssocBadge} alt={c.title} className="max-h-full max-w-full object-contain" />
+                  </div>
+                ) : (
+                  <div className="w-full h-full grid place-items-center font-display italic text-cream/15 text-7xl">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                )}
+              </div>
+
+              {/* Body */}
+              <div className="p-5 flex flex-col gap-3 flex-1">
+                <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.22em]">
+                  <span className="text-primary">{c.issuer}</span>
+                  <span className="text-muted-foreground">{c.year}</span>
+                </div>
+                <h3 className="font-display text-lg leading-snug text-cream flex-1">{c.title}</h3>
+                {c.file && (
                   <a
                     href={c.file}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.22em] text-primary hover:underline underline-offset-4"
+                    className="inline-flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.22em] text-cream hover:text-primary transition-colors mt-1 pt-3 border-t hairline"
                   >
-                    view ↗
+                    open certificate
+                    <span className="text-primary">↗</span>
                   </a>
-                ) : (
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">{c.year}</span>
                 )}
               </div>
-            </motion.li>
-          ))}
-        </ul>
+            </motion.article>
+          );
+        })}
       </div>
     </section>
   );
