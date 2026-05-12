@@ -12,6 +12,8 @@ const PROJECTS = [
     title: "NutriSense",
     year: "2025",
     tagline: "AI personal nutritionist for Indian households.",
+    description:
+      "Identifies regional dishes from photos, tracks micronutrients, and suggests pantry-aware meal improvements using familiar Indian ingredients.",
     stack: ["React", "Supabase", "Gemini", "PostgreSQL"],
     cover: nutrisense,
     github: "#",
@@ -21,6 +23,8 @@ const PROJECTS = [
     title: "VisionVoice AI",
     year: "2024",
     tagline: "Sight, narrated.",
+    description:
+      "Combines YOLOv8, BLIP, and text-to-speech to describe nearby objects and scenes for more accessible environmental awareness.",
     stack: ["Python", "OpenCV", "YOLOv8", "BLIP"],
     cover: visionvoice,
     github: "#",
@@ -30,6 +34,8 @@ const PROJECTS = [
     title: "Chemical Equipment Viz",
     year: "2024",
     tagline: "Industrial monitoring, made readable.",
+    description:
+      "A hybrid web and desktop analytics platform for equipment parameter tracking, trend analysis, and real-time performance visualization.",
     stack: ["Django", "React", "PyQt5", "Chart.js"],
     cover: chemviz,
     github: "#",
@@ -39,6 +45,8 @@ const PROJECTS = [
     title: "Sales Data Analysis",
     year: "2024",
     tagline: "From rows of CSV to revenue stories.",
+    description:
+      "Cleaned and transformed sales data into interactive Power BI dashboards for revenue trends, customer behavior, and KPI tracking.",
     stack: ["Power BI"],
     cover: sales,
     github: "#",
@@ -48,6 +56,8 @@ const PROJECTS = [
     title: "Smart Blind Stick",
     year: "2023",
     tagline: "Accessibility, embedded.",
+    description:
+      "An Arduino-based smart stick prototype using distance sensors and real-time alerts to support safer independent navigation.",
     stack: ["Arduino", "Sensors", "C"],
     cover: blindstick,
     github: "#",
@@ -68,7 +78,7 @@ export function Work() {
             transition={{ duration: 0.6, delay: (i % 3) * 0.06, ease: [0.2, 0.8, 0.2, 1] }}
             className="group relative rounded-lg border hairline bg-surface/50 overflow-hidden hover:bg-surface transition-colors"
           >
-            <div className="aspect-[4/3] overflow-hidden border-b hairline relative">
+            <div className="aspect-[3/2] overflow-hidden border-b hairline relative">
               <img
                 src={p.cover}
                 alt={`${p.title} cover`}
@@ -88,6 +98,9 @@ export function Work() {
                   {p.tagline}
                 </p>
               </div>
+              <p className="text-sm leading-relaxed text-cream/65">
+                {p.description}
+              </p>
               <div className="flex flex-wrap gap-1.5 pt-1">
                 {p.stack.map((s) => (
                   <span

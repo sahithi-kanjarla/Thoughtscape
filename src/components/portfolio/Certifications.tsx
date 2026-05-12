@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { CERTIFICATIONS } from "@/data/portfolio";
 import { SectionLabel } from "./shared";
-import ssocBadge from "@/assets/wins/ssoc.png";
 
 export function Certifications() {
   return (
@@ -9,8 +8,7 @@ export function Certifications() {
       <SectionLabel index="08 / certifications" title="paper trail —" />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {CERTIFICATIONS.map((c, i) => {
-          const isImage = !c.file && c.title.toLowerCase().includes("social summer");
+        {CERTIFICATIONS.filter((c) => !c.title.toLowerCase().includes("social summer")).map((c, i) => {
           return (
             <motion.article
               key={c.title}
@@ -39,10 +37,6 @@ export function Certifications() {
                       pdf
                     </span>
                   </>
-                ) : isImage ? (
-                  <div className="w-full h-full grid place-items-center bg-gradient-to-br from-primary/10 via-surface to-background p-6">
-                    <img src={ssocBadge} alt={c.title} className="max-h-full max-w-full object-contain" />
-                  </div>
                 ) : (
                   <div className="w-full h-full grid place-items-center font-display italic text-cream/15 text-7xl">
                     {String(i + 1).padStart(2, "0")}

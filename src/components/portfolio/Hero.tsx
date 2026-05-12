@@ -30,7 +30,11 @@ export function Hero() {
     show: (i: number) => ({
       y: 0,
       opacity: 1,
-      transition: { delay: reduce ? 0 : 0.04 * i, duration: 0.7, ease: [0.2, 0.8, 0.2, 1] as [number, number, number, number] },
+      transition: {
+        delay: reduce ? 0 : 0.04 * i,
+        duration: 0.7,
+        ease: [0.2, 0.8, 0.2, 1] as [number, number, number, number],
+      },
     }),
   };
 
@@ -44,11 +48,13 @@ export function Hero() {
           className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground mb-8 flex items-center gap-3"
         >
           <span className="inline-block size-1.5 rounded-full bg-primary status-dot" />
-          Portfolio · 2026 edition
+          Portfolio - 2026 edition
         </motion.div>
 
-        <h1 className="font-display font-light leading-[0.88] tracking-[-0.035em] text-cream"
-          style={{ fontSize: "clamp(2.75rem, 9vw, 9.5rem)" }}>
+        <h1
+          className="font-display font-light leading-[0.88] tracking-[-0.035em] text-cream"
+          style={{ fontSize: "clamp(2.75rem, 9vw, 9.5rem)" }}
+        >
           <span className="block overflow-hidden">
             <span className="inline-block">
               {first.split("").map((c, i) => (
@@ -101,10 +107,10 @@ export function Hero() {
           className="mt-10 md:mt-14 grid md:grid-cols-2 gap-8 items-end"
         >
           <p className="text-lg md:text-xl text-cream/80 max-w-md font-display italic leading-snug">
-            Computer Science engineer building meaningful technology — at the
-            seam of <span className="text-primary not-italic font-sans">AI</span>,
-            <span className="text-primary not-italic font-sans"> creativity</span> and
-            <span className="text-primary not-italic font-sans"> sustainability</span>.
+            Building technology with{" "}
+            <span className="text-primary not-italic font-sans">creativity</span>,
+            intention, and{" "}
+            <span className="text-primary not-italic font-sans">impact</span>.
           </p>
           <ul className="flex flex-wrap gap-2 md:justify-end">
             {ROLES.map((r, i) => (
@@ -137,7 +143,7 @@ export function Hero() {
           <span className="size-1.5 rounded-full bg-primary status-dot" />
           available for work
         </span>
-        <span className="ml-auto hidden md:inline">scroll ↓</span>
+        <span className="ml-auto hidden md:inline">scroll down</span>
       </motion.div>
     </section>
   );
