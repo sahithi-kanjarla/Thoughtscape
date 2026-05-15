@@ -46,7 +46,7 @@ const PROJECTS: ProjectCard[] = [
     stack: ["Python", "OpenCV", "YOLOv8", "BLIP"],
     cover: visionvoice,
     github: "#",
-    imageHints: [],
+    imageHints: ["vision-voice"],
   },
   {
     n: "03",
