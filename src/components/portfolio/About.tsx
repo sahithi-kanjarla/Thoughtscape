@@ -24,7 +24,7 @@ export function About() {
         </FadeIn>
         <FadeIn delay={0.1} className="md:col-span-7 space-y-6 text-cream/80 dark:text-cream/75 text-lg leading-relaxed">
           <p>
-            I'm Sahithi, a Computer Science Engineering student interested in
+            I'm Sahithi, a Final year Computer Science Engineering student interested in
             building meaningful technology through AI, creativity, accessibility,
             and data-driven solutions.
           </p>
