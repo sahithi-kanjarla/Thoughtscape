@@ -37,7 +37,7 @@ export function Nav() {
         <a href="#top" className="font-display text-lg tracking-tight text-cream" onClick={() => setOpen(false)}>
           Sahithi <span className="italic text-primary">K.</span>
         </a>
-        <nav className="hidden md:flex items-center gap-8 font-mono text-[11px] uppercase tracking-[0.22em]">
+        <nav className="hidden md:flex items-center gap-8 font-mono text-[13px] uppercase tracking-[0.2em]">
           {NAV.map((n) => (
             <a
               key={n.id}
@@ -57,7 +57,7 @@ export function Nav() {
           <a
             href="/Sahithi_Kanjarla_Resume.pdf"
             download
-            className="hidden sm:inline-flex font-mono text-[11px] uppercase tracking-[0.22em] px-4 py-2 rounded-full border border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="hidden sm:inline-flex font-mono text-xs uppercase tracking-[0.2em] px-4 py-2 rounded-full border border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             résumé ↓
           </a>

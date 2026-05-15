@@ -131,7 +131,7 @@ export const EDUCATION = [
 
 export const CONTACT = {
   email: "sahithikanjarla4082@gmail.com",
-  linkedin: "https://linkedin.com/in/sahithi-kanjarla",
+  linkedin: "https://www.linkedin.com/in/sahithi-kanjarla-569025289/",
   github: "https://github.com/sahithi-kanjarla",
   location: "Hyderabad, India",
 };

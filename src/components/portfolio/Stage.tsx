@@ -153,8 +153,8 @@ export function Stage() {
   return (
     <section id="stage" className="py-28 md:py-40">
       <div className="px-6 md:px-10 max-w-[1400px] mx-auto w-full">
-        <SectionLabel index="05 / stage" title="speaking & community -" />
-        <p className="font-display italic text-cream/70 text-lg md:text-xl max-w-xl mb-10">
+        <SectionLabel index="06 / stage" title="speaking & community -" />
+        <p className="font-display italic text-cream/80 dark:text-cream/70 text-lg md:text-xl max-w-xl mb-10">
           Drag to scroll through talks, organizing, volunteering, and community moments.
         </p>
       </div>
@@ -169,7 +169,7 @@ export function Stage() {
               <h3 className="font-display text-2xl mt-4 leading-tight text-cream">
                 {card.title}
               </h3>
-              <p className="text-cream/65 text-sm mt-1 max-w-xs">{card.caption}</p>
+              <p className="text-cream/80 dark:text-cream/65 text-sm mt-1 max-w-xs">{card.caption}</p>
             </article>
           ))}
         </div>

@@ -4,7 +4,7 @@ import { FadeIn, SectionLabel } from "./shared";
 export function Toolbox() {
   return (
     <section id="toolbox" className="px-6 md:px-10 py-28 md:py-40 max-w-[1400px] mx-auto w-full">
-      <SectionLabel index="04 / toolbox" title="how the work gets made —" />
+      <SectionLabel index="05 / toolbox" title="how the work gets made —" />
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[minmax(140px,auto)]">
         {SKILL_GROUPS.map((g, i) => {
@@ -25,7 +25,7 @@ export function Toolbox() {
                   {g.items.map((s) => (
                     <span
                       key={s}
-                      className="font-mono text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-full border hairline text-cream/85"
+                      className="font-mono text-[13px] uppercase tracking-wider px-3 py-1.5 rounded-full border hairline text-cream/85"
                     >
                       {s}
                     </span>

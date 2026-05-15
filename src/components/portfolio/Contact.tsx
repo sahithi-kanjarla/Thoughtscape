@@ -28,9 +28,8 @@ export function Contact() {
         Let's make something <span className="italic text-primary">together.</span>
       </h2>
 
-      <p className="font-display italic text-cream/70 text-lg md:text-xl mt-6 max-w-2xl">
-        Open to internships, collaborations and good conversations about AI,
-        accessibility and design.
+      <p className="font-display italic text-cream/80 dark:text-cream/70 text-lg md:text-xl mt-6 max-w-2xl">
+        Open to internships, full-time opportunities, and collaborations in AI and software development.
       </p>
 
       {/* Card grid */}

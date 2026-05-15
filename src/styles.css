@@ -72,23 +72,23 @@
 .light {
   /* Warm cream / paper light mode — same primary orange, flipped surfaces */
   --background: oklch(0.97 0.012 85);        /* warm paper */
-  --foreground: oklch(0.18 0.012 60);        /* deep espresso */
-  --cream: oklch(0.18 0.012 60);             /* "cream" tokens flip to ink so text stays readable */
+  --foreground: oklch(0.08 0.012 60);        /* much deeper espresso */
+  --cream: oklch(0.08 0.012 60);             /* "cream" tokens flip to dark ink so text stays readable even with low opacity */
   --surface: oklch(0.93 0.014 82);           /* lifted card */
   --card: oklch(0.93 0.014 82);
-  --card-foreground: oklch(0.18 0.012 60);
+  --card-foreground: oklch(0.08 0.012 60);
   --popover: oklch(0.93 0.014 82);
-  --popover-foreground: oklch(0.18 0.012 60);
+  --popover-foreground: oklch(0.08 0.012 60);
   --primary: oklch(0.62 0.2 38);             /* slightly deeper orange for contrast */
   --primary-foreground: oklch(0.97 0.012 85);
   --secondary: oklch(0.88 0.014 82);
-  --secondary-foreground: oklch(0.18 0.012 60);
+  --secondary-foreground: oklch(0.08 0.012 60);
   --muted: oklch(0.9 0.012 82);
-  --muted-foreground: oklch(0.42 0.014 70);
+  --muted-foreground: oklch(0.30 0.014 70);  /* darker muted text */
   --accent: oklch(0.62 0.2 38);
   --accent-foreground: oklch(0.97 0.012 85);
-  --border: oklch(0.18 0.012 60 / 14%);
-  --input: oklch(0.18 0.012 60 / 16%);
+  --border: oklch(0.08 0.012 60 / 14%);
+  --input: oklch(0.08 0.012 60 / 16%);
   --ring: oklch(0.62 0.2 38 / 60%);
 }
 

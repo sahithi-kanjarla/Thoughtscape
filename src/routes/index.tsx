@@ -42,8 +42,8 @@ function Index() {
       <Marquee />
       <About />
       <Education />
-      <Work />
       <Experience />
+      <Work />
       <Toolbox />
       <Stage />
       <Wins />

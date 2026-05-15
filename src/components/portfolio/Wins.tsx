@@ -2,7 +2,7 @@ import { ACHIEVEMENTS } from "@/data/portfolio";
 import { motion } from "framer-motion";
 import { SectionLabel } from "./shared";
 import awsSwags from "@/assets/wins/AWS swags.jpg";
-import scholarshipVector from "@/assets/projects/chemviz.svg";
+import scholarshipImage from "@/assets/wins/scholarship.jpg";
 import sihThirdPlace from "@/assets/wins/SIH cert 3rd place.jpeg";
 import ssoc from "@/assets/wins/ssoc.png";
 
@@ -17,9 +17,9 @@ function getAchievementImage(title: string) {
   if (normalizedTitle.includes("sih")) return sihThirdPlace;
   if (normalizedTitle.includes("aws")) return awsSwags;
   if (normalizedTitle.includes("social summer") || normalizedTitle.includes("open source")) return ssoc;
-  if (normalizedTitle.includes("scholarship")) return scholarshipVector;
+  if (normalizedTitle.includes("scholarship")) return scholarshipImage;
 
-  return scholarshipVector;
+  return scholarshipImage;
 }
 
 export function Wins() {
@@ -46,7 +46,7 @@ export function Wins() {
             <div className="p-5">
               <h3 className="font-display text-lg leading-tight text-cream">{a.title}</h3>
               {a.detail && (
-                <p className="text-sm leading-relaxed text-cream/65 mt-3">
+                <p className="text-sm leading-relaxed text-cream/80 dark:text-cream/65 mt-3">
                   {a.detail}
                 </p>
               )}

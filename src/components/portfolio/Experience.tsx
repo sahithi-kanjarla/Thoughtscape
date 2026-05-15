@@ -5,7 +5,7 @@ import { SectionLabel } from "./shared";
 export function Experience() {
   return (
     <section id="experience" className="px-6 md:px-10 py-28 md:py-40 max-w-[1400px] mx-auto w-full">
-      <SectionLabel index="04 / experience" title="where I've been —" />
+      <SectionLabel index="03 / experience" title="where I've been —" />
 
       <div className="relative pl-8 md:pl-12">
         {/* timeline rail */}
@@ -39,8 +39,8 @@ export function Experience() {
                   <h3 className="font-display text-2xl md:text-4xl tracking-tight text-cream">
                     {e.role}
                   </h3>
-                  <p className="font-display italic text-cream/60 text-lg mt-1">{e.org}</p>
-                  <ul className="mt-5 space-y-2 text-cream/70 max-w-2xl">
+                  <p className="font-display italic text-cream/80 dark:text-cream/60 text-lg mt-1">{e.org}</p>
+                  <ul className="mt-5 space-y-2 text-cream/80 dark:text-cream/70 max-w-2xl">
                     {e.bullets.map((b, j) => (
                       <li key={j} className="flex gap-3">
                         <span className="text-primary mt-2 size-1 rounded-full bg-primary shrink-0" />
