@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { SectionLabel } from "./shared";
@@ -95,14 +95,19 @@ function compact(value: string) {
   return normalize(value).replace(/\s+/g, "");
 }
 
+function extensionPriority(path: string) {
+  return path.toLowerCase().endsWith(".webp") ? 0 : 1;
+}
+
 function findImages(hints: string[]) {
   const entries = Object.entries(projectAssets)
     .map(([path, src]) => ({
+      path,
       name: normalize(path.split(/[\\/]/).pop() ?? path),
       compactName: compact(path.split(/[\\/]/).pop() ?? path),
       src,
     }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => extensionPriority(a.path) - extensionPriority(b.path) || a.name.localeCompare(b.name));
 
   const used = new Set<string>();
 
@@ -136,6 +141,15 @@ function ProjectImage({ project }: { project: ProjectCard }) {
   const sources = images.length > 0 ? images : [project.cover];
   const [active, setActive] = useState(0);
   const showControls = sources.length > 1;
+
+  useEffect(() => {
+    if (sources.length <= 1) return;
+    const indexes = [active, (active + 1) % sources.length, (active - 1 + sources.length) % sources.length];
+    indexes.forEach((index) => {
+      const image = new Image();
+      image.src = sources[index];
+    });
+  }, [active, sources]);
 
   const goToPrevious = () => {
     setActive((current) => (current === 0 ? sources.length - 1 : current - 1));

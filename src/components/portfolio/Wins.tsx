@@ -1,9 +1,9 @@
 import { ACHIEVEMENTS } from "@/data/portfolio";
 import { motion } from "framer-motion";
 import { SectionLabel } from "./shared";
-import awsSwags from "@/assets/wins/AWS swags.jpg";
+import awsSwags from "@/assets/wins/AWS swags.webp";
 import scholarshipImage from "@/assets/wins/scholarship.jpg";
-import sihThirdPlace from "@/assets/wins/SIH cert 3rd place.jpeg";
+import sihThirdPlace from "@/assets/wins/SIH cert 3rd place.webp";
 import ssoc from "@/assets/wins/ssoc.png";
 
 const visibleAchievements = ACHIEVEMENTS.filter((achievement) => {
