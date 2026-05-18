@@ -81,8 +81,8 @@ export function Hero() {
                   initial="hidden"
                   animate="show"
                   variants={letter}
-                  className="inline-block italic"
-                  style={{ fontVariationSettings: '"opsz" 144, "wght" 500' }}
+                  className="inline-block"
+                  style={{ fontVariationSettings: '"opsz" 144, "wght" 420' }}
                 >
                   {c}
                 </motion.span>
