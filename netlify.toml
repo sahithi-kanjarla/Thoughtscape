@@ -2,6 +2,18 @@
   command = "npm run build"
   publish = "dist/client"
 
+[[headers]]
+  for = "/sahithi-kanjarla-resume.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Content-Disposition = "attachment; filename=\"sahithi-kanjarla-resume.pdf\""
+
+[[headers]]
+  for = "/Sahithi_Kanjarla_Resume.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Content-Disposition = "attachment; filename=\"sahithi-kanjarla-resume.pdf\""
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
