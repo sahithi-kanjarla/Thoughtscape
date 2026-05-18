@@ -69,7 +69,11 @@ export const STAGE = [
   { title: "Host - AgentCon, Microsoft Office", caption: "Hosted sessions and coordinated interactions for an agent-builder community event." },
   { title: "Women Techmakers Volunteer", caption: "Volunteered in inclusive tech initiatives focused on learning and collaboration." },
   { title: "Literature Club", caption: "Created space for poetry, writing, and expressive student community moments." },
-  { title: "SIH Internal Hackathon 2024", caption: "Supported event coordination as a student coordinator for the internal hackathon." },
+  {
+    title: "SIH Internal Hackathon 2024",
+    caption:
+      "Served as a Student Coordinator for the Smart India Hackathon (SIH) Internal Hackathon 2024, assisting in participant coordination, event management, and smooth execution of hackathon activities.",
+  },
 ];
 
 export const ACHIEVEMENTS: { title: string; note?: string; detail?: string }[] = [

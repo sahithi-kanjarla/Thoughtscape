@@ -44,7 +44,8 @@ const CARDS: StageCard[] = [
   },
   {
     title: "SIH Internal Hackathon 2024",
-    caption: "Helped coordinate student participation and event flow for the internal hackathon.",
+    caption:
+      "Served as a Student Coordinator for the Smart India Hackathon (SIH) Internal Hackathon 2024, assisting in participant coordination, event management, and smooth execution of hackathon activities.",
     imageHints: ["sih 2024 co ordinator", "sih coordinator", "student coordinator"],
     fallback: communityFallback,
   },
@@ -179,7 +180,7 @@ export function Stage() {
           {CARDS.map((card, i) => (
             <article
               key={card.title}
-              className="snap-start w-[82vw] sm:w-[440px] shrink-0 group"
+              className="snap-start w-[76vw] sm:w-[360px] shrink-0 group"
             >
               <StageImage card={card} index={i} />
               <h3 className="font-display text-2xl mt-4 leading-tight text-cream">

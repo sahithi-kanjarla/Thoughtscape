@@ -103,7 +103,6 @@ export function Contact() {
 
       <footer className="mt-20 pt-8 border-t hairline flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
         <span>© 2026 Sahithi Kanjarla</span>
-        <span>built with care · framer motion + tanstack</span>
       </footer>
     </section>
   );
