@@ -117,6 +117,8 @@ function StageImage({ card, index }: { card: StageCard; index: number }) {
       <img
         src={sources[active]}
         alt={card.title}
+        loading="lazy"
+        decoding="async"
         className="h-full w-full object-contain bg-surface transition-transform duration-700 group-hover:scale-[1.02]"
       />
       <span className="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-[0.2em] text-cream/80 bg-background/70 backdrop-blur px-2 py-1 rounded-full border hairline">

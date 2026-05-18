@@ -55,8 +55,8 @@ export function Nav() {
             open to work
           </span>
           <a
-            href="/Sahithi_Kanjarla_Resume.pdf"
-            download
+            href="/sahithi-kanjarla-resume.pdf"
+            download="sahithi-kanjarla-resume.pdf"
             className="hidden sm:inline-flex font-mono text-xs uppercase tracking-[0.2em] px-4 py-2 rounded-full border border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             résumé ↓
@@ -93,8 +93,8 @@ export function Nav() {
             </a>
           ))}
           <a
-            href="/Sahithi_Kanjarla_Resume.pdf"
-            download
+            href="/sahithi-kanjarla-resume.pdf"
+            download="sahithi-kanjarla-resume.pdf"
             onClick={() => setOpen(false)}
             className="mt-6 inline-flex items-center justify-center font-mono text-[11px] uppercase tracking-[0.22em] px-5 py-3 rounded-full border border-primary text-primary"
           >

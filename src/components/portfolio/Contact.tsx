@@ -54,8 +54,8 @@ export function Contact() {
 
         {/* Resume card */}
         <a
-          href="/Sahithi_Kanjarla_Resume.pdf"
-          download
+          href="/sahithi-kanjarla-resume.pdf"
+          download="sahithi-kanjarla-resume.pdf"
           className="group md:col-span-2 rounded-2xl border hairline bg-primary/10 p-6 md:p-8 hover:bg-primary hover:text-primary-foreground transition-all flex flex-col justify-between min-h-[180px]"
         >
           <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-primary group-hover:text-primary-foreground/80">
